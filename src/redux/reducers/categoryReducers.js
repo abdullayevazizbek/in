@@ -169,9 +169,7 @@ export function getCategorySlug(slug) {
                 dispatch(
                     SetCategoryAttributesAC(response.data.categoryAttributes)
                 )
-                dispatch(SetCategoryBrandsAC(response.data.categoryBrands))
-                dispatch(SetCategoryPaginationAC(response.data.pagination))
-                dispatch(SetCategorySubCatsAC(response.data.subCats))
+                
                 dispatch(SetLoadingAC(false))
             })
             .catch(function (error) {
